@@ -1,0 +1,25 @@
+{
+  "name": "pos-system",
+  "version": "1.0.0",
+  "description": "Complete and user-friendly POS system installable on Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.possystem",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "electron": "^25.0.0",
+    "nodemailer": "^6.9.3"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.6.0"
+  }
+}
